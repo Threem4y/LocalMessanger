@@ -1,0 +1,76 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "LocalWeb/1.0.0": {
+        "dependencies": {
+          "MaterialDesignColors": "2.1.3-ci239",
+          "MaterialDesignThemes": "4.8.1-ci239"
+        },
+        "runtime": {
+          "LocalWeb.dll": {}
+        }
+      },
+      "MaterialDesignColors/2.1.3-ci239": {
+        "runtime": {
+          "lib/net6.0/MaterialDesignColors.dll": {
+            "assemblyVersion": "2.1.3.0",
+            "fileVersion": "2.1.3.0"
+          }
+        }
+      },
+      "MaterialDesignThemes/4.8.1-ci239": {
+        "dependencies": {
+          "MaterialDesignColors": "2.1.3-ci239",
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39"
+        },
+        "runtime": {
+          "lib/net6.0/MaterialDesignThemes.Wpf.dll": {
+            "assemblyVersion": "4.8.1.0",
+            "fileVersion": "4.8.1.0"
+          }
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+        "runtime": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.39.4716"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LocalWeb/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MaterialDesignColors/2.1.3-ci239": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wolY+rQvMlRZhwegirFc6iTPW+tDssJXt8XF64QkZYbq6s/7iTtN4U0rt25KFRqFsStJFJDJGBgQtBBr3TOe+w==",
+      "path": "materialdesigncolors/2.1.3-ci239",
+      "hashPath": "materialdesigncolors.2.1.3-ci239.nupkg.sha512"
+    },
+    "MaterialDesignThemes/4.8.1-ci239": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cjXcnSjPr547N339QKV9yVw5+I9my04eQx4+/uVJpdWoIusOaDmykCoo8uyopwM0J7tvJAXmMNOnHeYWqvQylw==",
+      "path": "materialdesignthemes/4.8.1-ci239",
+      "hashPath": "materialdesignthemes.4.8.1-ci239.nupkg.sha512"
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.39",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    }
+  }
+}

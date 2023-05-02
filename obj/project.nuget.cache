@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0OgeM9QTXejPLJrSovm7qi8MkjBPl3wX6LeB6WxPVDEyT85zuuIK1aY2TPHAvbfM/a2wnFMlL1HjbKp9uz284Q==",
+  "success": true,
+  "projectFilePath": "D:\\VS проекты\\LocalWeb\\LocalWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andre\\.nuget\\packages\\materialdesigncolors\\2.1.3-ci239\\materialdesigncolors.2.1.3-ci239.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\materialdesignthemes\\4.8.1-ci239\\materialdesignthemes.4.8.1-ci239.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}
