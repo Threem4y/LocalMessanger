@@ -1,0 +1,31 @@
+﻿<Window x:Class="LocalWeb.theserver"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocalWeb"
+        mc:Ignorable="d"
+        Title="theserver" Height="450" Width="800">
+    <Grid>
+        
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="400"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="350"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <ListBox x:Name="MessageeListBox"  Grid.Row="0" Grid.Column="1" SelectionChanged="MessageeListBox_SelectionChanged" />
+            <Button x:Name="SenddMessageButton" Content="Send"  Grid.Column="0"  Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Click="SenddMessageButton_Click_1"/>
+            <Button x:Name="ExittButton" Content="Exit" HorizontalAlignment="Stretch"  Grid.Column="2" VerticalAlignment="Bottom"  Grid.Row="1" Click="ExittButton_Click" />
+            <TextBox x:Name="MessageeTextBox" HorizontalAlignment="Stretch" TextWrapping="Wrap"  VerticalAlignment="Bottom"  Grid.Row="1" Grid.Column="1" TextChanged="MessageeTextBox_TextChanged"/>
+            <ListBox x:Name="UserssListBox"  Grid.Row="0" Grid.Column="0" SelectionChanged="UserssListBox_SelectionChanged" />
+        <ListBox x:Name="Logs" Grid.Column="2" Grid.Row="0" SelectionChanged="Logs_SelectionChanged"  />
+
+
+
+    </Grid>
+</Window>

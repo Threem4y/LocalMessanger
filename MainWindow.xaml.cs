@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,44 +21,54 @@ namespace LocalWeb
 {
     public partial class MainWindow : Window
     {
-        private Socket socket;
+        public static string Ipi;
+        public static string vimya;
         public MainWindow()
         {
             InitializeComponent();
-            socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream,ProtocolType.Tcp);
-            socket.Connect("26.33.75.123", 8888);
-            RecieveMessage();
         }
-        private async Task RecieveMessage()
+
+        private void UserButton_Click(object sender, RoutedEventArgs e)
         {
-            while (true)
+            if (Ipi != null)
             {
-                byte[] bytes = new byte[1024];
-                await socket.ReceiveAsync(bytes, SocketFlags.None);
-                string message = Encoding.UTF8.GetString(bytes);
-                MessageListBox.Items.Add(message);
+                Ipi = IpAdress.Text;
+                FirstWin server = new FirstWin();
+                server.Show();
+                Close();
             }
-        }
-        private async Task sendnudes(string msg)
-        {
-            byte[] bytes = Encoding.UTF8.GetBytes(msg);
-            await socket.SendAsync(bytes, SocketFlags.None);
+
+
+            else
+            {
+                MessageBox.Show("Введите айпишник");
+            }
             
+          
         }
 
-        private void SendMessageButton_Click(object sender, RoutedEventArgs e)
+        private void HostButton_Click(object sender, RoutedEventArgs e)
         {
-            sendnudes(MessageTextBox.Text);
+
+                vimya = NameUser.Text;
+                theserver tyuio = new theserver();
+                tyuio.Show();
+                Close();
+            
+
         }
 
-        private void MessageTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void NameUser_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
-        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        private void IpAdress_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+           
         }
     }
 }
+
+
+

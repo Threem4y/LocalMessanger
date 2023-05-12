@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="FirstWin" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="350"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <ListBox x:Name="MessageListBox"  Grid.Row="0" Grid.Column="1"/>
+        <Button x:Name="SendMessageButton" Content="Send"  Grid.Column="0" Click="SendMessageButton_Click" VerticalAlignment="Bottom"  HorizontalAlignment="Stretch" Grid.Row="1"/>
+        <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Stretch"  Grid.Column="2" VerticalAlignment="Bottom"  Grid.Row="1"/>
+        <TextBox x:Name="MessageTextBox" HorizontalAlignment="Stretch" TextWrapping="Wrap"  VerticalAlignment="Bottom"  Grid.Row="1" Grid.Column="1"/>
+        <ListBox x:Name="UsersListBox"  Grid.Row="0" Grid.Column="0"/>
+
     </Grid>
 </Window>

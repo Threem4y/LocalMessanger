@@ -24,3 +24,7 @@ D:\VS проекты\LocalWeb\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.
 D:\VS проекты\LocalWeb\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
 D:\VS проекты\LocalWeb\obj\Debug\net6.0-windows\App.baml
 D:\VS проекты\LocalWeb\obj\Debug\net6.0-windows\LocalWeb.csproj.CopyComplete
+D:\VS проекты\LocalWeb\obj\Debug\net6.0-windows\FirstWin.g.cs
+D:\VS проекты\LocalWeb\obj\Debug\net6.0-windows\FirstWin.baml
+D:\VS проекты\LocalWeb\obj\Debug\net6.0-windows\theserver.g.cs
+D:\VS проекты\LocalWeb\obj\Debug\net6.0-windows\theserver.baml
